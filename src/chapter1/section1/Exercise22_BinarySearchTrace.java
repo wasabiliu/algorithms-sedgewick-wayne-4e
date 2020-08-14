@@ -12,7 +12,7 @@ public class Exercise22_BinarySearchTrace {
 
     public static int rank(int[] a, int key, int lo, int hi, int depth) {
         if (lo > hi) return -1;
-        int mid = lo + (hi - lo) / 2;
+        int mid = (lo + hi) >>> 1;
         System.out.printf("%slo:%d, hi:%d\n", getIndents(depth), lo, hi);
         if (key > a[mid]) return rank(a, key, mid + 1, hi, depth + 1);
         else if (key < a[mid]) return rank(a, key, lo, mid - 1, depth + 1);

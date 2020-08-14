@@ -13,7 +13,7 @@ public class Exercise23_BinarySearchFlag {
     public static int rank(int[] whitelist, int key) {
         int lo = 0, hi = whitelist.length - 1;
         while (lo <= hi) {
-            int mid = lo + (hi - lo) / 2;
+            int mid = (lo + hi) >>> 1;
             if (whitelist[mid] == key) return mid;
             else if (whitelist[mid] < key) {
                 lo = mid + 1;
