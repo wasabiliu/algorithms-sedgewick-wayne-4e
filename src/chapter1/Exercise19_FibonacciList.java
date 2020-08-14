@@ -41,6 +41,6 @@ public class Exercise19_FibonacciList {
             StdOut.println(N + " " + F(N));
         }
 
-        printLongArray(betterF(100));
+        printLongArray(betterF(50));
     }
 }
