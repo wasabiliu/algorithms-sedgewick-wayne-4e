@@ -1,5 +1,3 @@
-package ch1.section1;
-
 /**
  * 1.1.1
  * Give the value of each of the following expressions.
