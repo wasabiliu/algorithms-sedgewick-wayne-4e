@@ -8,9 +8,9 @@ import java.text.SimpleDateFormat;
  */
 public class Exercise11_SmartDate {
     static class SmartDate {
-        private int year;
-        private int month;
-        private int day;
+        private final int year;
+        private final int month;
+        private final int day;
 
         public SmartDate(int year, int month, int day) throws IllegalArgumentException {
             this.year = year;

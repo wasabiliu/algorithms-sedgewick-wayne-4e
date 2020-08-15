@@ -5,17 +5,17 @@ import java.util.Date;
 
 /**
  * 1.2.12
- * Add a method dayOfTheWeek() to SmartDate that returns a Sting value Monday, 
+ * Add a method dayOfTheWeek() to SmartDate that returns a Sting value Monday,
  * Tuesday, Wednesday, Thursday, Saturday, or Sunday, giving the appropriate
- * day of the week for the date. You may assume that the date is in the 21st 
+ * day of the week for the date. You may assume that the date is in the 21st
  * century.
  */
 public class Exercise12_SmartDateWeek {
     static class SmartDate {
-        private int year;
-        private int month;
-        private int day;
-        private Date date;
+        private final int year;
+        private final int month;
+        private final int day;
+        private final Date date;
 
         public SmartDate(int year, int month, int day) throws IllegalArgumentException {
             this.year = year;
