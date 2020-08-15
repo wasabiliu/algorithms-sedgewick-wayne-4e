@@ -1,5 +1,5 @@
 /**
- * 1.1.8
+ * 1.2.8
  * Suppose that a[] and b[] are each integer arrays consisting of millions
  * of integers. What does the follow code do? Is it reasonably efficient?
  *      int[] t = a; a= b; b= t;
